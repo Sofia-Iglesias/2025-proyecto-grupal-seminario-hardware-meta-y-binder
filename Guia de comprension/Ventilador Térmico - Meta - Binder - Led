@@ -1,0 +1,35 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+ Es un actuador, porque no mide nada, sino que muestra una acción encendiendo una luz cuando recibe energía eléctrica.
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+ Usa una señal digital, ya que puede estar encendido (1 o HIGH) o apagado (0 o LOW).
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+ Solo puede recibir voltaje. Normalmente entre 2V y 3V dependiendo del color del LED.
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+ Tiene dos pines:
+Ánodo (positivo): se conecta al pin digital del Arduino o a una resistencia.
+
+
+Cátodo (negativo): se conecta a tierra (GND).
+
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+ Se puede usar cualquier pin digital, por ejemplo el 8. Lo elegí porque es fácil de controlar con digitalWrite() y no interfiere con otros componentes.
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+ El pin positivo del LED se conecta a una resistencia de 220Ω y de ahí a un pin digital del Arduino. El pin negativo va a GND. La resistencia es necesaria para que no se queme el LED.
+¿Cuál es el principio de funcionamiento del componente?
+ Cuando se aplica voltaje al ánodo y está conectado a tierra, el LED emite luz. Si no hay voltaje, se apaga.
+¿Utiliza alguna librería particular para programarlo?
+ No, se maneja con las funciones básicas de Arduino.
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+ El LED responde a digitalWrite(pin, HIGH) para encenderse y digitalWrite(pin, LOW) para apagarse.
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+ Nunca se debe conectar directamente a 5V sin resistencia porque se quema. Hay que respetar su voltaje de trabajo (2V aprox.) y corriente máxima (20mA).
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+ Podés conectar el LED con una resistencia a 5V y GND. Si prende, funciona bien. También se puede hacer un código simple que lo prenda y apague cada segundo.
+Simular en Tinkercad e incluir el link de la simulación.
+
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+ Esperamos que el LED prenda y apague según el código cargado.
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+ Si el LED no prende, puede ser por una resistencia mal conectada, polaridad invertida o porque el pin no está configurado como salida. Si prende débil o no apaga, puede haber un mal contacto o una resistencia incorrecta.
