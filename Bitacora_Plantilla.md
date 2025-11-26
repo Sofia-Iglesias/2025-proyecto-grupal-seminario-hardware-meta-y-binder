@@ -5,8 +5,8 @@
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Uriel Meta`  
+- `Thiago Binder`
 
 
 ---
@@ -14,22 +14,22 @@
 
 ## **`Semana 1`**
 
-**`Fecha:`**
+**`Fecha: la posta no me acuerdo`**
 
 **`Actividades Realizadas:`**
 
-- `Actividad 1`  
-- `Actividad 2`
+- `hicimos la guía de comprensión`  
+- `ya teníamos pensado el proyecto`
 
 **`Dificultades:`**
 
-- `Dificultad 1`  
-- `Dificultad 2`
+- `coordinación`  
+- `entendimiento de la consigna`
 
 **`Próximos Pasos:`**
 
-- `Próximo paso 1`  
-- `Próximo paso 2`
+- `hacer el circuito en tinkercad`  
+- `hacer el código en tinkercad`
 
 
 ---
@@ -37,19 +37,18 @@
 
 ## **`Semana 2`**
 
-**`Fecha:`**
+**`Fecha: prefiero no decir (el día de la entrega)`**
 
 **`Actividades Realizadas:`**
 
-- `Actividad 1`  
-- `Actividad 2`
+- `El circuito en tinkercad`  
+- `El código`
 
 **`Dificultades:`**
 
-- `Dificultad 1`  
-- `Dificultad 2`
+- `coordinación`  
+- `programar en tinkercad porque estaba re oxidado`
 
 **`Próximos Pasos:`**
 
-- `Próximo paso 1`  
-- `Próximo paso 2`
+- `Ya terminamos no hay más pasos`  
