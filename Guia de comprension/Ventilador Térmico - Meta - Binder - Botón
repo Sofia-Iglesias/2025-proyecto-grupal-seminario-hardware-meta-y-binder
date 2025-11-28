@@ -1,39 +1,50 @@
 Nombre del componente: Botón.
 
 
-¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal. Es un sensor porque detecta una acción física como presionar y permite o interrumpe el paso de corriente eléctrica en el circuito.
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal. 
 
+Es un sensor porque detecta una acción física como presionar y permite o interrumpe el paso de corriente eléctrica en el circuito.
 
-¿Qué tipo de señal utiliza para comunicarse con Arduino? Usa una señal digital que puede ser 0 o 1.
+¿Qué tipo de señal utiliza para comunicarse con Arduino? 
 
+Usa una señal digital que puede ser 0 o 1.
 
-¿Cuál es el rango de valores que puede entregar o recibir el componente? Solo puede entregar 0 que representa LOW o 1 que representa HIGH.
+¿Cuál es el rango de valores que puede entregar o recibir el componente? 
 
+Solo puede entregar 0 que representa LOW o 1 que representa HIGH.
 
-¿Qué pines de conexión tiene el componente? Ennumerar y describir su función. Tiene dos pines. Un pin se conecta al voltaje positivo de 5V o 3.3V y el otro pin se conecta al pin digital de Arduino y también a tierra para cerrar el circuito.
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función. 
 
+Tiene dos pines. Un pin se conecta al voltaje positivo de 5V o 3.3V y el otro pin se conecta al pin digital de Arduino y también a tierra para cerrar el circuito.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines? Se puede usar el pin digital 2 de Arduino o cualquier otro pin digital porque están diseñados para leer señales digitales de entrada.
 
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias). Un pin del botón se conecta al 5V y el otro pin se conecta al pin digital 2 y a tierra para cerrar el circuito.
 
-¿Cuál es el principio de funcionamiento del componente? Cuando el botón está abierto no pasa corriente y Arduino lee 0. Cuando se presiona el circuito se cierra y Arduino lee 1.
+¿Cuál es el principio de funcionamiento del componente? 
 
+Cuando el botón está abierto no pasa corriente y Arduino lee 0. Cuando se presiona el circuito se cierra y Arduino lee 1.
 
-¿Utiliza alguna librería particular para programarlo? No usa ninguna librería especial. Se maneja con las funciones básicas de Arduino como digitalRead.
+¿Utiliza alguna librería particular para programarlo? 
 
+No usa ninguna librería especial. Se maneja con las funciones básicas de Arduino como digitalRead.
 
-¿Cómo se interpreta el dato de entrada o salida del componente en el programa? El dato se interpreta con digitalRead. Si devuelve 1 significa que el botón está presionado y si devuelve 0 significa que no lo está.
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa? 
 
+El dato se interpreta con digitalRead. Si devuelve 1 significa que el botón está presionado y si devuelve 0 significa que no lo está.
 
-¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta? No se deben aplicar más de 5 voltios. Hay que cuidar las conexiones para evitar cortocircuitos o lecturas falsas.
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta? 
 
+No se deben aplicar más de 5 voltios. Hay que cuidar las conexiones para evitar cortocircuitos o lecturas falsas.
 
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final? Se puede usar un programa que muestre en el monitor serie el valor 0 o 1 al presionar el botón y comprobar que cambia correctamente.
 
 
 Simular en Tinkercad e incluir el link de la simulación. En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 
+https://www.tinkercad.com/things/71jeyCibFQd/editel?returnTo=%2Fdashboard&sharecode=R7QdEpP--taXy8B2Z1kad_WkuWJNi8CAwM5SbPTMTX8
 
-¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito? El componente puede fallar si está mal conectado o si el botón está dañado. En el código se detecta si la lectura no cambia al presionarlo o si el valor varía sin tocarlo.
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito? 
+
+El componente puede fallar si está mal conectado o si el botón está dañado. En el código se detecta si la lectura no cambia al presionarlo o si el valor varía sin tocarlo.
