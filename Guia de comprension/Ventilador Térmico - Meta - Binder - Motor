@@ -1,38 +1,65 @@
 ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
-Actuador.
+
+Actuador
+
 ¿Qué tipo de señal utiliza para comunicarse con Arduino?
-Ninguna, sólo recibe voltaje. 
+
+Ninguna, sólo recibe voltaje. ,
+
 ¿Cuál es el rango de valores que puede entregar o recibir el componente?
-Es un actuador, no entrega valores pero puede recibir hasta 6 volts
+
+Es un actuador, no entrega valores pero puede recibir hasta 6 volts.
+
 ¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+
 Tiene 2 uno es de tierra para dirigir a donde va la electricidad y el otro es el positivo que es de donde viene la electricidad. 
+
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines? 
+
 Se conectaría al arduino mediante 3 pines, ena in1 e in2 que sirve para controlar la velocidad del arduino. El ena iría conectado a algún pin pwm para poder tener un rango de valores y el in1 y 2 irían conectados a cualquier pin digital que no sea pwm ni el 0 y el 1.
+
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 
 ¿Cuál es el principio de funcionamiento del componente?
+
 Si recibe energía gira, sino no. 
+
 ¿Utiliza alguna librería particular para programarlo?
+
 No.
+
 ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+
 No se interpreta, solamente gira si recibe voltaje y amperes.
+
 ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+
 Que no se pase del voltaje ni se sobrecaliente.
+
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+
 Conectamos el motor a una fuente de alimentación. Probamos conectando brevemente a una batería regulada. Nos fijamos si gira en la dirección correcta. Medimos la corriente de arranque y funcionamiento que tiene que estar dentro del rango especificado.
+
 Simular en Tinkercad e incluir el link de la simulación. 
+
 https://www.tinkercad.com/things/gG1DThBbmiz/editel?returnTo=%2Fdashboard&sharecode=KZ4j30wU9Z9bEoSir8ITrSWkO1VkBRH9uF5e4RqgCwU
 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+
 Esperamos que el motor gire.
+
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
 
 El motor no gira, y puede ser porque no hay alimentación eléctrica (fuente desconectada o pin sin tensión). Polaridad invertida. Pin digital mal configurado o sin pinMode() en el código. No hay componente de potencia.
+
 Cómo detectarlo: Revisa con el multímetro virtual si llega tensión al motor, revisar el estado de los pines en el simulador (los pines de salida deberían ponerse en HIGH) y revisar que el motor esté conectado a GND y VCC correctamente.
+
 El motor gira al revés o en momentos incorrectos. y puede ser porque los pines de control están invertidos en el código, por un error lógico o porque el cableado está invertido.
+
 Cómo detectarlo: Pone una variable de depuración o mensajes Serial.print() para ver si el código activa el pin en el momento correcto. Mirando la lógica paso a paso en el monitor serial.
 
 
  El motor siempre está encendido, y puede ser por que un pin está configurado en OUTPUT y siempre en HIGH, por falta de control en el software  o porque el transistor siempre está saturado (resistencia base muy baja o mal conectado).
+
 Cómo detectarlo: Usando el monitor serial para ver cuándo el Arduino cree que debe encenderlo. Medí la tensión base del transistor (siempre HIGH = problema de código o hardware).
 
