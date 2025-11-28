@@ -27,21 +27,33 @@ El principio es mediante más temperatura reciba más voltaje manda al arduino.
 
 
 ¿Utiliza alguna librería particular para programarlo?
+
 no
+
 ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+
 El LM35 entrega un voltaje proporcional a la temperatura (10mV por °C).
+
 En el programa se lee ese voltaje con analogRead()  que da un valor entre 0 y 1023.
+
 Después ese valor se convierte a voltaje y después a grados Celsius.
+
 ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+
 El LM35 es sensible así que hay que tener cuidado. No hay que darle más voltaje del que necesita (5V), porque se puede quemar. También su señal es muy débil, por eso si usás cables largos puede entrar ruido y la medida sale mal. Siempre tiene que compartir la misma tierra (GND) con el Arduino para que lea bien. Tampoco sirve para temperaturas muy altas, solo llega más o menos hasta 150°C.
 
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+
 Le daría una alimentación externa al arduino y con un tester revisaria si cambia la temperatura.
 
 Simular en Tinkercad e incluir el link de la simulación. 
+
 https://www.tinkercad.com/things/3MsELerMRgi-glorious-amur-snaget/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=kuoTAd6MCSDga1S2ryg8cu-W5Gakw_o00tNQtPLY55E
+
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente? 
-Lo pondríamos atrás del ventilador, y el valor que debería devolver es la temperatura   ambiente (serán tipo 20°C). 
+
+Lo pondríamos atrás del ventilador, y el valor que debería devolver es la temperatura   ambiente (serán tipo 20°C).
+
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
 
-  Si el LM35 empieza a dar números que no tienen sentido, puede ser que esté mal conectado. También si lo tocás y la temperatura no sube un poco, capaz el sensor está roto o el código no lo está leyendo bien. Y si el sensor se calienta, seguro lo conectaste al revés y se arruinó. 
+Si el LM35 empieza a dar números que no tienen sentido, puede ser que esté mal conectado. También si lo tocás y la temperatura no sube un poco, capaz el sensor está roto o el código no lo está leyendo bien. Y si el sensor se calienta, seguro lo conectaste al revés y se arruinó. 
